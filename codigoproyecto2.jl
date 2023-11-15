@@ -1,4 +1,4 @@
-using Roots
+using Roots #Añadir Roots a julia con Pkg.add("Roots")
 
 # Función para calcular el método de Newton-Raphson. Requiere todos los datos planteados anteriormente.
 function newtonRaphson(Vi, A, B, R, Temp, P, N)
@@ -52,4 +52,4 @@ Pcrit = 111.3 # Presión crítica en atm
 Vi = vol_inicial(P, N, R, Temp)
 A = calculoA(R, Tcrit, Pcrit)
 B = calculoB(R, Tcrit, Pcrit)
-NR = newtonRaphson(Vi, A, B, R, Temp, P, N)
+newtonRaphson(Vi, A, B, R, Temp, P, N)
